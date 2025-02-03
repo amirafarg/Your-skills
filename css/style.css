@@ -1,0 +1,283 @@
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: 0;
+    background: transparent;
+}
+
+:root {
+    font-size: 16px;
+
+    /* colors */
+    --orenge: #FF5722;
+    --dark-grey: #21272A;
+    --white: #FFF;
+    --grey: #697077;
+    --grey-plsholder: #A4A5A7;
+}
+
+/* reset */
+
+/* --------header-------- */
+header {
+    padding: 1rem;
+}
+
+.flex-hdr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar-ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nav-bar-ul > li > a {
+    color: var(--dark-grey);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#a-active {
+    color: var(--orenge);
+}
+
+.super-menu {
+    position: relative;
+}
+
+.menu {
+    position: absolute;
+    background-color: white;
+    border-radius: 0.375rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    visibility: hidden;
+    opacity: 0;
+    top: 150%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    display: block;
+    padding: 0;
+}
+
+.menu > li > a {
+    color: #000;
+    font-size: 0.6875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.super-menu:hover .menu {
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+    transition: all linear 0.5s;
+}
+
+/* .menu {
+    display: flex;
+    min-width: 100%;
+    white-space: nowrap;
+} */
+
+.menu > li:not(:last-of-type) {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.ditls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+/*----- header----- */
+
+/* ------ Hero-section ----- */
+.hero-sec {
+    padding: 2.5rem 0;   
+}
+
+.heads-hero {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+h1,
+.p-hero-sec {
+    color: var(--dark-grey);
+    font-size: 3.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+.p-hero-sec {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 140%;
+}
+/*------ Hero-section -----*/
+
+/*----- sec-2 -----*/
+.h2-center,
+.center-p {
+    text-align: center;
+}
+
+.h2-center {
+    color: var(--dark-grey);
+    font-size: 2.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+.center-p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.plus-g {
+    margin-top: 2rem;
+}
+
+/* .p-l:not(:first-of-type) {
+    padding-left: 4rem;
+    padding-right: 2rem;
+} */
+/*----- sec-2 -----*/
+
+/*--------sec-4--------*/
+.sec-2,
+.sec-4,
+.sec-5 {
+    padding: 2.5rem 0;
+}
+
+.padding {
+    padding-left: 5rem;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-content: center;
+    align-items: start;
+    padding-left: 2rem;
+}
+
+.h2-sec-4,
+.p-sec-4 {
+    color: #21272A;
+    font-size: 2.1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+.p-sec-4 {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.btn-contact {
+    color: #FFF;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    border-radius: 0.375rem;
+    background: #FF5722;
+    padding: 1rem 1.5rem;
+    border: 0;
+    margin-top: 4rem;
+}
+
+/*--------sec-5--------*/
+
+.flex-sec-5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+.headings-sec-5 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.h2-sec-5,
+.p-sec-5 {
+    color: #21272A;
+    font-size: 3.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+.p-sec-5 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.flex-btns {
+    display: flex;
+    gap: 1rem;
+    margin-top: 4rem;
+}
+
+.start {
+    color: #FF5722;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0.03125rem;
+    padding: 1rem;
+    border-radius: 0.375rem;
+    border: 2px solid #FF5722;
+    background-color: white;
+}
+
+.active {
+    background: #FF5722;
+    color: #fff;
+}
+
+.sec-5 {
+    padding-bottom: 0;
+}
